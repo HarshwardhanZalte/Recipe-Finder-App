@@ -5,8 +5,7 @@ document.getElementById('search-form').addEventListener('submit', function(event
 });
 
 function searchRecipes(query) {
-    const apiKey = 'YOUR_API-KEY';
-    const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&number=10&apiKey=${apiKey}`;
+    const apiUrl = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&number=10&apiKey=3d6cca8b88db4fdb893a4472e1a84a03`;
 
     fetch(apiUrl)
         .then(response => {
